@@ -1,0 +1,32 @@
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+* {
+    border: 2px solid blue;
+}
+
+img {
+    width: 30%;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+body {
+    text-align: center;
+}
