@@ -246,8 +246,43 @@ main section img {
 
 /* start styles specific for Encounters page */
 .encounters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: +25px;
+    align-items: center;
+    align-content: center;
+    height: 1200px;
+    width: 1600px;
+    justify-content: center;
+    justify-items: auto;
+    z-index: auto;
+}
+
+.info {
+    height: 1200px;
+    grid-column: 1/7;
+    background-color: rgba(81, 66, 66, 0.751);
+    color: white;
+    float: left;
+    justify-content: space-around;
+}
+
+
+#img-info {
+    float: right;
+    justify-content: center;
 
 }
+
+.info-img {
+    grid-column: 5/7;
+    border: 10px solid rgb(98, 21, 21);
+    float: right;
+    margin-top: -500px;
+    z-index: -2;
+}
+
 
 /* end styles specific for Encounters page */
 
