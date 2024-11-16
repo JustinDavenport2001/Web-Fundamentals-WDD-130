@@ -244,6 +244,13 @@ main section img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* start styles specific for Encounters page */
+.encounters-grid {
+
+}
+
+/* end styles specific for Encounters page */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
