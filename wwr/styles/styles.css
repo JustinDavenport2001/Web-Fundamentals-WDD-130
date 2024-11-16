@@ -255,7 +255,7 @@ main section img {
     height: 1200px;
     width: 1600px;
     justify-content: center;
-    justify-items: auto;
+    justify-items: center;
     z-index: auto;
 }
 
