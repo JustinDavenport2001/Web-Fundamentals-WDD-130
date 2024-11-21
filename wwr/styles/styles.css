@@ -288,9 +288,14 @@ main section img {
 
 /* start of form */
 
+.contact-us-grid {
+    grid-template-columns: auto;
+}
+
 body {
     /* Center the form on the page */
     text-align: center;
+    justify-content: center;
   }
   
   form {
@@ -300,6 +305,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 1em;
     background-color: rgba(122, 84, 84, 0.667);
+    grid-column: auto;
   }
   
   p + p {
