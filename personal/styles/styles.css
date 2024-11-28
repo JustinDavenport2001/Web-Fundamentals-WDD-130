@@ -2,16 +2,15 @@ content {
     width: 1600px;
     margin: 0 auto;
     text-align: center;
-}
-
-.icon {
-    height: 100px;
-    width: 100px;
+    justify-content: center;
+    justify-items: center;
 }
 
 .logo {
-    height: 110px;
-    width: auto;   
+    height: 90px;
+    width: auto;  
+    border-radius: 100%; 
+    padding: 10px;
 }
 
 header {
@@ -19,6 +18,7 @@ header {
     grid-template-columns: 150px auto;
     max-height: 110px;
     background-color: #5a4103de;
+    max-width: 1600px;
 }
 
 nav  a {
@@ -29,6 +29,7 @@ nav  a {
     font-size: 2.0em;
     padding: 35px;
     box-shadow: 5px 5px 10px #5a4103;
+    border-radius: 10%;
 }
 
 nav :hover {
@@ -40,7 +41,93 @@ nav :hover {
 nav {
     display: flex;
     justify-content: space-around;
+    max-height: 90px;
+    padding-top: 10px;
 }
+
+#top-bar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1600px;
+    padding-top: 100px;
+    background-color: rgb(254, 225, 225);
+
+}
+
+.me {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 500px;
+}
+
+.me-intro {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 2em;
+    background-color: #0a0b5d ;
+    color: #eed9ff;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    max-width: 1600px;
+    max-height: 500px;
+    padding: 50px;
+    background-color: rgb(254, 225, 225);
+}
+div {
+    display: grid;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    box-shadow: 5px 5px 10px #5a4103;
+    border-radius: 20%;
+}
+
+.adobe {
+    grid-column: 3/10;
+    grid-row-start: 1;
+    justify-items: center;
+}
+
+.photo {
+    grid-column: 3/4;
+    grid-row-start: 2;
+    justify-items: center;
+}
+
+.acro {
+    grid-column: 5/6;
+    justify-items: center;
+    grid-row-start: 2;
+}
+
+.inde {
+    grid-column: 7/8;
+    justify-items: center;
+    grid-row-start: 2;
+}
+
+.illus {
+    grid-column: 9/10;
+    justify-items: center;
+    grid-row-start: 2;
+}
+
+footer {
+    max-width: 1600px;
+}
+
 
 /* Start of Why */
 
