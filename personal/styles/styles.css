@@ -1,78 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Manrope:wght@200..800&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #07004D;
+    --secondary-color: #946846;
+    --accent1-color: #D4C5E2;
+    --accent2-color: #F2F6D0;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Itim";
+    --paragraph-font: "Kanit";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #0a0b5d;  /* headlines on a white background */ 
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #0a0b5d; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: #eed9ff;
+    --nav-background-color: #5a4103;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #0a0b5d;
+}
+
 content {
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
     text-align: center;
-    justify-content: center;
-    justify-items: center;
+    margin: 10px;
+    padding: auto;
     display: inline-block;
+    justify-self: center;
 }
 
 .logo {
     height: 90px;
     width: auto;  
-    border-radius: 100%; 
+    border-radius: 200%; 
     padding: 10px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    max-height: 130px;
-    background-color: #5a4103de;
-    width: 1600px;
-    justify-self: center;
-}
-
-nav  a {
-    text-align: center;
-    grid-column: auto;
-    color: blue;
-    background-color: #eed9ffb7;
-    font-size: 2.0em;
-    padding: 35px;
-    box-shadow: 5px 5px 10px #5a4103;
-    border-radius: 10px;
-}
-
-nav :hover {
-    color: rgb(29, 29, 147);
-    background-color: #eed9ff;
-
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    max-height: 90px;
-    padding-top: 10px;
-}
 
 #top-bar {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    justify-content: center;
-    justify-items: center;
-    max-width: 1600px;
+    justify-self: center;
+    width: 1600px;
     padding-top: 100px;
-    background-color: rgb(254, 225, 225);
-
+    background-color: var(--accent1-color);
 }
 
 .me {
     grid-column-start: 1;
     grid-row-start: 1;
     height: 500px;
+    margin: 35px;
+    margin-left: 80px;
+    border-radius: 20px;
 }
 
 .me-intro {
     grid-column-start: 2;
     grid-row-start: 1;
     font-size: 2em;
-    background-color: #0a0b5d ;
-    color: #eed9ff;
+    background-color: var(--primary-color) ;
+    color: white;
     justify-content: space-around;
     padding: 35px;
+    margin: 35px;
+    border-radius: 20px;
+    font-family: var(--paragraph-font);
+}
+
+.me-intro h1 {
+    font-family: var(--heading-font);
 }
 
 #bottom {
@@ -80,10 +84,15 @@ nav {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 1fr 2fr;
     justify-content: center;
-    max-width: 1600px;
+    justify-self: center;
+    width: 1600px;
     max-height: 500px;
-    padding: 50px;
-    background-color: rgb(254, 225, 225);
+    padding-bottom: 50px;
+    background-color: var(--accent1-color);
+}
+
+#bottom h3 {
+    font-family: var(--heading-font);
 }
 
 
@@ -98,6 +107,11 @@ nav {
     grid-column: 3/10;
     grid-row-start: 1;
     justify-items: center;
+}
+
+.adobe h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
 }
 
 .photo {
@@ -124,10 +138,6 @@ nav {
     grid-row-start: 2;
 }
 
-footer {
-    max-width: 1600px;
-}
-
 
 /* Start of Why */
 
@@ -136,6 +146,9 @@ footer {
     grid-template-columns: auto;
     justify-content: center;
     text-align: center;
+    background-color: var(--accent2-color);
+    max-width: 1600px;
+    justify-self: center;
 }
 
 .gallery {
@@ -151,6 +164,53 @@ h1 {
     grid-column: span;
 }
 
+#lower-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1600px;
+    justify-content: center;
+    padding-top: 100px;
+    padding: 100px;
+}
+
+.recent {
+    grid-column: 1/2;
+    padding: 35px;
+    font-size: 2.0em;
+    background-color: var(--secondary-color);
+    width: 700px;
+    margin-right: 35px;
+    font-family: var(--heading-font);
+    border-radius: 5px;
+}
+
+.sum {
+    grid-column: 2/4;
+    padding: 35px;
+    font-size: 2.0em;
+    background-color: var(--primary-color);
+    color: white;
+    width: 700px;
+    border-radius: 5px;
+}
+
+.sum p {
+    font-family: var(--paragraph-font);
+}
+
+.sum h2 {
+    font-family: var(--heading-font);
+}
+
+.why-grid h1 {
+    font-size: 3.0em;
+    background-color: var(--primary-color);
+    padding: 35px;
+    border-radius: 30px;
+    display: inline-block;
+    color: white;
+    font-family: var(--heading-font);
+}
 /* End of Why */
 
 
@@ -161,3 +221,60 @@ h1 {
 
 
 /* End of future */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    max-height: 130px;
+    background-color: var(--secondary-color);
+    width: 1650px;
+    border-radius: 25px;
+    justify-self: center;
+}
+
+nav  a {
+    text-align: center;
+    grid-column: auto;
+    color: blue;
+    background-color: #eed9ffb7;
+    font-size: 2.0em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #5a4103;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+nav :hover {
+    color: rgb(29, 29, 147);
+    background-color: var();
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 90px;
+    padding-top: 10px;
+}
+
+footer {
+    max-height: 300px;
+    background-color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+footer a {
+    background-color: white;
+    box-shadow: none;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: var(--heading-font);
+
+}
