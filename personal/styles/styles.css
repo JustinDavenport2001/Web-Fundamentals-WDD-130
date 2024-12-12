@@ -30,7 +30,7 @@ content {
     margin: 0 auto;
     text-align: center;
     margin: 10px;
-    padding: auto;
+    
     display: inline-block;
     justify-self: center;
 }
@@ -390,7 +390,7 @@ nav  a {
 
 nav :hover {
     color: rgb(29, 29, 147);
-    background-color: var();
+    background-color: var(--accent1-color);
 
 }
 
